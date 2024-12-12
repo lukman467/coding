@@ -1,0 +1,101 @@
+body {background: rgb(237, 151, 104);}
+
+.heart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+	height: 24px;
+  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+}
+
+.h0 {
+  background: #ffcccc;
+	transform: scale(150);
+  animation: move0 linear 2s 0s infinite;
+}
+
+.h1 {
+  background: #ff6666;
+	transform: scale(90);
+  animation: move1 linear 2s 0s infinite;
+}
+
+.h2 {
+  background: #cc0000;
+	transform: scale(60);
+  animation: move2 linear 2s 0s infinite;
+}
+
+.h3 {
+	background: #ffcccc;
+	transform: scale(40);
+  animation: move3 linear 2s 0s infinite;
+}
+
+.h4 {
+  background: #ff6666;
+	transform: scale(20);
+  animation: move4 linear 2s 0s infinite;
+}
+
+.h5 {
+  background: #cc0000;
+	transform: scale(5);
+  animation: move5 linear 2s 0s infinite;
+}
+
+.h6 {
+	background: #ffcccc;
+	transform: scale(.1);
+  animation: move6 linear 2s 0s infinite;
+}
+
+@keyframes move0 {
+  to {
+    transform: scale(180);
+    background: #cc0000;
+  }
+}
+
+@keyframes move1 {
+  to {
+    transform: scale(150);
+    background: #ffcccc;
+  }
+}
+
+@keyframes move2 {
+  to {
+    transform: scale(90);
+    background: #ff6666;
+  }
+}
+
+@keyframes move3 {
+  to {
+    transform: scale(60);
+    background: #cc0000;
+  }
+}
+
+@keyframes move4 {
+  to {
+    transform: scale(40);
+    background: #ffcccc;
+  }
+}
+
+@keyframes move5 {
+  to {
+    transform: scale(20);
+    background: #ff6666;
+  }
+}
+
+@keyframes move6 {
+  to {
+    transform: scale(5);
+    background: #cc0000;
+  }
+}
