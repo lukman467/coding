@@ -1,0 +1,25 @@
+body {
+    filter: blur(0.5px);
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: rgba(255,0, 10, .2);
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    filter: blur(100px);
+}
+canvas {
+    display: block;
+}
