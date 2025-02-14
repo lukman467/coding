@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+html,
+body,
+.container {
+    height: 100%;
+    font-family: "Kaushan Script", "Sail", cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin: 0;
+    overflow: hidden;
+}
+canvas#c {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#balloon-container {
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: opacity 500ms;
+}
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+    }
+}

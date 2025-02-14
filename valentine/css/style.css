@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    overflow: hidden;
+}
+h1 {
+    color: #ff5555;
+}
+.container {
+    margin-top: 0px;
+}
+.gif-container {
+    margin-bottom: 20px;
+}
+.gif-container img {
+    max-width: 300px;
+    height: auto;
+}
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+.yes-btn {
+    background-color: #38b44d;
+    color: white;
+}
+.no-btn {
+    background-color: #e93d3d;
+    color: white;
+    position: absolute;
+}
