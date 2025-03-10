@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flower</title>
+</head>
+<body>
+    <div class="container">
+        <svg viewBox="0 0 800 600" class="main-svg">
+          <rect width="100%" height="100%" class="boundary"></rect>
+          
+          <linearGradient id="gradient-black-white">
+              <stop stop-color="black" offset="0"/>
+              <stop stop-color="white" offset="100%"/>
+          </linearGradient>
+          
+          <mask id="petal-mask" maskunits="objectBoundingBox" maskcontentunits="objectBoundingBox">
+              <rect y="0" width="1" height="1" fill="url(#gradient-black-white)"/>
+          </mask>
+          
+          <symbol id="petal-shape">
+              <path d="M60,400 C60,400 120,298.319352 120,200 C120,89.54305 60,0 60,0 C60,0 0,89.54305 0,200 C0,310.45695 60,400 60,400 Z" class="petal-element"></path>
+          </symbol>
+      
+          <svg viewBox="0 10 120 800">
+            <rect width="100%" height="100%" class="boundary"></rect>
+            <g class="petals-group">
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+              <g class="petal-group">
+                <use xlink:href="#petal-shape"/>
+              </g>
+            </g>
+          </svg>
+        </svg>
+      </div>
+</body>
+</html>

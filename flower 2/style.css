@@ -1,0 +1,107 @@
+body {
+  background: #FFF;
+}
+
+svg {
+  overflow: visible;
+}
+
+.main-svg {
+  width: 100%;
+  height: 95%;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.boundary {
+  fill: none;
+}
+
+.petals-group {
+  transform-origin: 60px 400px;
+  animation: spin-full 20s infinite;
+}
+
+.petal-group {
+  transform-origin: 60px 415px;
+}
+.petal-group:nth-of-type(15n+1) {
+  transform: rotate(24deg);
+  color: hsl(76.8, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+2) {
+  transform: rotate(48deg);
+  color: hsl(153.6, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+3) {
+  transform: rotate(72deg);
+  color: hsl(230.4, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+4) {
+  transform: rotate(96deg);
+  color: hsl(307.2, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+5) {
+  transform: rotate(120deg);
+  color: hsl(24, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+6) {
+  transform: rotate(144deg);
+  color: hsl(100.8, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+7) {
+  transform: rotate(168deg);
+  color: hsl(177.6, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+8) {
+  transform: rotate(192deg);
+  color: hsl(254.4, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+9) {
+  transform: rotate(216deg);
+  color: hsl(331.2, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+10) {
+  transform: rotate(240deg);
+  color: hsl(48, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+11) {
+  transform: rotate(264deg);
+  color: hsl(124.8, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+12) {
+  transform: rotate(288deg);
+  color: hsl(201.6, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+13) {
+  transform: rotate(312deg);
+  color: hsl(278.4, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+14) {
+  transform: rotate(336deg);
+  color: hsl(355.2, 95%, 60%);
+}
+.petal-group:nth-of-type(15n+15) {
+  transform: rotate(360deg);
+  color: hsl(72, 95%, 60%);
+}
+
+.petal-group use {
+  fill: currentColor;
+  transform-origin: 60px 250px;
+  -webkit-mask: url(#petal-mask);
+          mask: url(#petal-mask);
+  animation: spin-full 5s infinite;
+}
+
+@keyframes spin-full {
+  100% {
+    transform: rotate(360deg);
+  }
+}
