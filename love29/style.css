@@ -1,0 +1,32 @@
+body{
+    margin:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+  }
+  
+  .left,.right{
+    display:inline-block
+  }
+  .left{
+    width:170px;
+    height:239px;
+    margin-right:-4px
+  }
+  
+  div>div{
+    display:block;
+    height:34px;
+  }
+  div>div>div{
+    width:30px;
+    height:30px;
+    background-color:red;
+    display:inline-block;
+    float:right;
+    margin:2px;
+  }
+  div.right>div>div{
+    float:left;
+  }
