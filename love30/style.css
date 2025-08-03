@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg {
+  max-width: 50vw;
+  max-height: 50vh;
+}
+svg path {
+  fill:red;
+  stroke:red;
+  stroke-width: 3.8;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
