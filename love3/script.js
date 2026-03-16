@@ -181,7 +181,7 @@ const animate = () => {
     if(stat){
     u.writeT("x=16*sin**3(t); y=13*cos(t)-",0.5*W,0.85*H);
 u.writeT("5*cos(2t)- 2*cos(3t) - cos(4t)",0.5*W,0.9*H);
-    u.writeT("proves that love is irrational",0.5*W,0.95*H);}
+    u.writeT("i believe that we always together in every universe:)",0.5*W,0.95*H);}
     requestAnimationFrame(animate);
 };
 
@@ -190,7 +190,7 @@ const init = () => {
     W = ctx.canvas.width = innerWidth;
     H = ctx.canvas.height = innerHeight;
     turn=0;
-    stat=(window.confirm("Want to know the formula?"));
+    stat=(window.confirm("You wanna know something TwT?"));
     ropes=[];
     ropes.push(new Rope(W*0.5, H*0.25,1,"hotpink",0.2));
     //ropes.push(new Rope(W*0.25, H*0.25,5,"cyan"));
