@@ -4,13 +4,13 @@ import time
 import random
 
 LYRICS = [
-    "Got nothing to hide no more",
-    "I don't know where to start",
-    "But to show you the shape of my heart",
-    "I'm lookin' back on things I've done",
-    "I never wanna play the same old part",
-    "I'll keep you in the dark ",
-    "Now let me show you the shape of my heart",
+    "SEPTYA RAMADHANI",
+    "CINTAKU",
+    "SEPTYA RAMADHANI",
+    "KASIH KU",
+    "SEPTYA RAMADHANI",
+    "BABY KU ",
+    "I LOVE YOU",
 ]
 
 DELAYS = [
